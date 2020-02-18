@@ -1,0 +1,32 @@
+{
+  "name": "recpie-mm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "dev":"node src/index.js";
+    "start":"node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSG-G8/recpie-mm.git"
+  },
+  "author": "Mariam and Mohammed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GSG-G8/recpie-mm/issues"
+  },
+  "homepage": "https://github.com/GSG-G8/recpie-mm#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "jest": "^25.1.0",
+    "nodemon": "^2.0.2"
+  }
+}
