@@ -1,0 +1,54 @@
+*{
+  box-sizing: border-box;
+  overflow: hidden;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+  background-color:cadetblue;
+  font-family: sans-serif;
+  
+}
+.container{
+  width: 80%;
+  margin: auto;
+}
+.header-title{
+  text-align: center;
+  color: #333;
+  margin-top: 70px;
+
+}
+.header-desc{
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+}
+.form__group{
+  display: flex;
+  justify-content: center;
+}
+.label-input{
+  align-self: center;
+  margin-right: 5px;
+}
+.input-recpie{
+  width: 50%;
+  border: 1px solid gray;
+  color: #333;
+  padding: 20px;
+  border-radius: 50px;
+}
+.search{
+  background-color:white;
+  border: 2px solid #333;
+  margin-left: 10px;
+  color: #333;
+  padding: 20px;
+  font-weight: bold;
+  border-radius: 20px;
+}
+.search:hover{
+  color: white;
+  background-color:#333 ;
+}
