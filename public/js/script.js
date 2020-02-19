@@ -1,7 +1,14 @@
-const search = document.querySelector('.input-recpie').value;
-const body = { search };
+
+const search = document.querySelector('.input-recpie');
 const searchbtn = document.querySelector('.search');
 
 searchbtn.addEventListener('click', () => {
-  getSearchValue(body, '/foo');
+  const body = { search: search.value };
+  getSearchValue(body, '/foo').then((data) => {
+    displayData(data);
+  }).catch((err) => console.log(err));
 });
+
+window.onload = () => fetch('/food').then((res) => res.json())
+  .then((data) => displayData(data))
+  .catch(console.error);
