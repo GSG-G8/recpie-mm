@@ -11,7 +11,6 @@ const displayData = (data) => {
   container.appendChild(food);
   const title = document.createElement('h1');
   title.textContent = `food name : ${data.q}`;
-  console.log(data);
   food.appendChild(title);
   for (let i = 0; i < data.hits.length; i++) {
     const url = document.createElement('a');
