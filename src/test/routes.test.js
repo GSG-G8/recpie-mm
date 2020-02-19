@@ -10,7 +10,6 @@ test('test 404 error', (done) => {
     .expect(404)
     .end((err) => {
       if (err) done(err);
-      // expect(res.text).toBe();
       done();
     });
 });
@@ -20,8 +19,19 @@ test('test /food end point', (done) => {
     .get('/food')
     .expect(200)
     .end((err) => {
-      if (err) done(err, res);
-      expect(res.text).toEqual(res.text);
+      if (err);
+      done();
+    });
+});
+
+test('test post route', (done) => {
+  request(app)
+    .post('/foo')
+    .send({ search: 'fish' })
+    .expect('Content-Type', /json/)
+    .expect(200)
+    .end((err) => {
+      if (err) done(err);
       done();
     });
 });
