@@ -10,8 +10,7 @@ const displayData = (data) => {
   const food = document.createElement('div');
   container.appendChild(food);
   const title = document.createElement('h1');
-  title.textContent = `food name : ${data.q}`;
-  console.log(data);
+  title.textContent = data.q;
   food.appendChild(title);
   for (let i = 0; i < data.hits.length; i++) {
     const url = document.createElement('a');
