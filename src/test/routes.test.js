@@ -18,11 +18,10 @@ test('test 404 error', (done) => {
 test('test /food end point', (done) => {
   request(app)
     .get('/food')
-    .send('pasta')
     .expect(200)
     .end((err) => {
       if (err) done(err, res);
-      expect(res.text).toEqual();
+      expect(res.text).toEqual(res.text);
       done();
     });
 });

@@ -4,4 +4,4 @@ const getSearchValue = (search = 'chicken', endPoint) => fetch((endPoint), {
   headers: { 'Content-Type': 'application/json' },
 })
   .then((res) => res.json())
-  .catch((error) => console.error(error, 'aaa'));
+  .catch((error) => console.error(error));
