@@ -27,4 +27,6 @@ searchbtn.addEventListener('click', () => {
   }).catch((err) => console.log(err));
 });
 
-window.onload = () => fetch('/food').then((res) => res.json()).then(console.log).catch(console.error);
+window.onload = () => fetch('/food').then((res) => res.json())
+  .then((data) => displayData(data))
+  .catch(console.error);
