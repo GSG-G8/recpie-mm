@@ -1,9 +1,7 @@
-
 const search = document.querySelector('.input-recpie');
 const searchbtn = document.querySelector('.search');
-const form = document.querySelector('.form__group');
 const errorDiv = document.createElement('div');
-
+const containerParent = document.querySelector('.recpie-data').parentNode;
 
 // input field validation
 const checkInputValue = (inputValue) => inputValue.replace(/ +(?= )/g, '').trim();
@@ -12,7 +10,9 @@ const disableBtn = () => {
     searchbtn.disabled = true;
     const errText = document.createElement('p');
     errText.textContent = 'Please type your desire food';
+    errorDiv.setAttribute('style', 'text-align:center');
     errorDiv.appendChild(errText);
+    containerParent.insertBefore(errorDiv, container);
   } else {
     searchbtn.disabled = false;
   }
