@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "node src/index.js",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "test": "jest src/test/routes.test.js"
   },
   "repository": {
     "type": "git",
@@ -21,12 +22,14 @@
     "compression": "^1.7.4",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.0",
+    "supertest": "^4.0.2"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.20.1",
+    "jest": "^25.1.0",
     "nodemon": "^2.0.2"
   }
 }
